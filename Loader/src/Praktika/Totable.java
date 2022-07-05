@@ -1,6 +1,6 @@
 package Praktika;
 
- class ToTable {
+ /**class ToTable {
      int[] data;
      int x, y;
 
@@ -42,4 +42,4 @@ package Praktika;
              return res;
          }
      }
- }
+ }**/

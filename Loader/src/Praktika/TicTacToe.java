@@ -2,7 +2,7 @@ package Praktika;
 
 
 
-public class TicTacToe {
+/**public class TicTacToe {
     String newPlayer;
     String[][] field;
 
@@ -73,8 +73,9 @@ public class TicTacToe {
             }
             for (int i = 0; i < 3; i++) {
                 for (int j = 0; j < 3; j++) {
-                    if (field[i][j].equals("-")) return "D";
+                    if (field[i][j].equals("-")) return null;
                 }
+                return "D";
             }
             String makeMove ( int x, int y){
                 x = 0;
@@ -98,4 +99,4 @@ public class TicTacToe {
 
         }
     }
-}
+}**/
