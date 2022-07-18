@@ -8,12 +8,11 @@ public class Elf {
 
  class Fight {
     public static void main(String[] args) {
-
-
     Elf elf = new Elf();
     Ork ork = new Ork();
+   // fight(elf,ork);
 }
-    //fight(elf,ork);
+
     private static void Fight(Elf elf, Ork ork) {
         while (true) {
             if (!ork.isOrkAlive && elf.isElfAlive) {
@@ -21,7 +20,7 @@ public class Elf {
                 break;
             } else if (ork.isOrkAlive && !elf.isElfAlive) {
                 System.out.println(" Win Ork" + ork.name);
-                break;
+                break;void
             } else if (!ork.isOrkAlive && !elf.isElfAlive) {
                 System.out.println("All dead");
                 break;
