@@ -1,6 +1,6 @@
 package Monster;
 
-public class GiantSnake extends Monster {
+/**public class GiantSnake extends Monster {
     public static String scream = "Ssssss";
 
     public GiantSnake(String name) {
@@ -26,9 +26,9 @@ public class GiantSnake extends Monster {
     @Override
     public void attack(){
         growl(true);
-        super.attack();
+      super.damage(getForce());
         System.out.println("     ...and hid in the grass");
     }
 
 
-}
+}**/

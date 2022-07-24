@@ -20,7 +20,7 @@ public class Elf {
                 break;
             } else if (ork.isOrkAlive && !elf.isElfAlive) {
                 System.out.println(" Win Ork" + ork.name);
-                break;void
+                break;
             } else if (!ork.isOrkAlive && !elf.isElfAlive) {
                 System.out.println("All dead");
                 break;
