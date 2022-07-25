@@ -23,10 +23,6 @@ public class Pigeon extends Bird{
         return hunger;
     }
 
-    @Override
-    public String toString() {
-        return "Pigeon{" +
-                "hunger=" + hunger +
-                '}';
-    }
+
+
 }
