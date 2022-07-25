@@ -9,19 +9,19 @@ public class CheckingAccount extends Account {
 
     @Override
     void withdraw(int n) {
-        super.withdraw(n);
+       balance -= n;
     }
 
-    @Override
+ /**   @Override
     void put(int n) {
         super.put(n);
         if (n > balance) balance -= n;
     }
 
-    @Override
+  /**  @Override
     int checkBalance() {
         return super.checkBalance();
-    }
+    }**/
     protected int getDebt() {
         if (balance < 0) {
             return balance;

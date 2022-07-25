@@ -11,7 +11,7 @@ public class Account {
         if (n > balance) balance = 0;
     }
     void put(int n){
-        n +=balance;
+        n += balance;
     }
 
     int checkBalance() {

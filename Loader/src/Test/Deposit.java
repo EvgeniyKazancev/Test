@@ -4,11 +4,11 @@ public class Deposit extends Account {
     private int period;
     private double percent;
 
-    public Deposit(int balance) {
+  /**  public Deposit(int balance) {
         super(balance);
     }
 
-    @Override
+   @Override
     void withdraw(int n) {
         super.withdraw(n);
     }
@@ -21,7 +21,7 @@ public class Deposit extends Account {
     @Override
     int checkBalance() {
         return super.checkBalance();
-    }
+    }**/
 
     public Deposit(int balance, int period, double percent) {
         super(balance);
@@ -31,10 +31,11 @@ public class Deposit extends Account {
 
     double withdraw() {
         if (period <= 0) {
-            balance *= percent;
-            super.withdraw(balance);
-
-        }     return period;
+         double res = Double.parseDouble(String.valueOf(balance * (100 + percent))) / 100;
+         balance = 0;
+         return res;
+        }
+        return 0;
     }
 
     int waitDays(int n) {
