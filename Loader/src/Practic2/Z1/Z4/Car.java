@@ -17,7 +17,7 @@ public class Car {
         }
 
         String startStopEngine() {
-            if (this.isWorking) {
+            if (isWorking) {
                 isWorking = false;
                 return "engine was stopped";
 
