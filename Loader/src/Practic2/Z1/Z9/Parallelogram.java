@@ -1,8 +1,8 @@
 package Practic2.Z1.Z9;
 
 public class Parallelogram extends Quadrangle implements Figure{
-    double alpha; // левый нижний угол  в градусах
-    double beta; // левый верхний угол , в градусах
+    double alpha;
+    double beta;
 
     public Parallelogram(int a, int b,  double alpha, double beta, String color) {
         super(a, b, color);

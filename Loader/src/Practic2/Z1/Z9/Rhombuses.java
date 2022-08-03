@@ -1,8 +1,8 @@
 package Practic2.Z1.Z9;
 
 public class Rhombuses extends Quadrangle implements Figure{
-    double alpha; // левый нижний угол ромба в градусах
-    double beta; // левый верхний угол ромба, в градусах
+    double alpha;
+    double beta;
 
     public Rhombuses(int a,   double alpha, double beta, String color) {
         super(a,  a, color);
