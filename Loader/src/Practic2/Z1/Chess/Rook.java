@@ -18,7 +18,7 @@ public class Rook extends ChessPiece{
     }
 
     @Override
-    public String getSimbl() {
+    public String getSymbol() {
         return "R";
     }
 }

@@ -15,15 +15,18 @@ public class Pawn extends ChessPiece {
 
     @Override
     public boolean canMoveToPosition(ChessBoard chessBoard, int line, int column, int toLine, int toColumn) {
-        if(line < 0 || toLine > 7 || column < 0 || toColumn > 7 )
-         return false;
-       else if (color.equals("White")   && line == 1 && Math.abs(toColumn - column) == 2) return true;
-            else if (Math.abs(toLine - line) == 0 && Math.abs(toColumn - column) == 1) return true;
-         else return false;
+        if (line < 0 || toLine > 7 || column < 0 || toColumn > 7) return false;
+        if (color.equals("White") && line == 1 && Math.abs(toColumn - column) == 2) return true;
+        if (Math.abs(toLine - line) == 0 && Math.abs(toColumn - column) == 1) return true;
+        return false;
     }
 
     @Override
-    public String getSimbl() {
+    public String getSymbol() {
         return "P";
     }
+
+
+
+
 }

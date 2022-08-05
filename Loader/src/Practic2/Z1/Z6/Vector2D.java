@@ -17,9 +17,9 @@ public class Vector2D extends Vector{
     }
 
     int getScalarProduct(Vector2D vector2D){
-     return double scalar = (x1 * x2 + y1 * y2) * 2;
+     return (x1 * x2 + y1 * y2) * 2;
     }
-   int getAngle(Vector2D vector2D){
+   double getAngle(Vector2D vector2D){
         if(getLength() != 0 && vector2D.getLength() !=0){
          return  getScalarProduct(vector2D)  /  this.getLength() + vector2D.getLength();
         }else return -2.0;

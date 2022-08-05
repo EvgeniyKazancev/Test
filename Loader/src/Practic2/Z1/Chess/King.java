@@ -18,7 +18,11 @@ public class King extends ChessPiece{
     }
 
     @Override
-    public String getSimbl() {
+    public String getSymbol() {
         return "K";
+    }
+
+    public boolean isUnderAttack(ChessBoard chessBoard, int i, int i1) {
+        return false;
     }
 }

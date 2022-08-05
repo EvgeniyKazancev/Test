@@ -13,13 +13,14 @@ public class Bishop extends ChessPiece {
 
     @Override
     public boolean canMoveToPosition(ChessBoard chessBoard, int line, int column, int toLine, int toColumn) {
-        if(line < 0 || toLine > 7 || column < 0 || toColumn > 7 ) return false;
-        else if(Math.abs(line - column) == Math.abs(toLine - toColumn) || Math.abs(line + column) == Math.abs(toLine + toColumn)) return true;
-        else return false;
+        if (line < 0 || toLine > 7 || column < 0 || toColumn > 7) return false;
+        if (Math.abs(line - column) == Math.abs(toLine - toColumn) || Math.abs(line + column) == Math.abs(toLine + toColumn))
+            return true;
+        return false;
     }
 
     @Override
-    public String getSimbl() {
+    public String getSymbol() {
 
         return "B";
     }

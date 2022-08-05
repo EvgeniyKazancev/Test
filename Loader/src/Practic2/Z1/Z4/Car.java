@@ -7,25 +7,19 @@ public class Car {
         this.carModel = carModel;
     }
 
-    class Engin {
+    class Engine {
         boolean isWorking = false;
         int horsepower;
 
-        public Engin( int horsepower) {
+        public Engine( int horsepower) {
 
             this.horsepower = horsepower;
         }
 
         String startStopEngine() {
-            if (isWorking) {
-                isWorking = false;
-                return "engine was stopped";
+            isWorking = !isWorking;
+            return isWorking ? "engine was started" : "engine was stopped";
 
-            }else {
-                isWorking = true;
-                return "engine was started";
-
-            }
         }
     }
 }

@@ -12,7 +12,7 @@ public class ChessBoard {
         return this.nowPlayer;
     }
 
-    public boolean moveToPosition(int startLine, int startColumn, int endLine, int endColumn, boolean check) {
+    public boolean moveToPosition(int startLine, int startColumn, int endLine, int endColumn) {
 
         if (checkPos(startLine) && checkPos(startColumn)) {
 
@@ -25,13 +25,11 @@ public class ChessBoard {
 
                 return true;
             } else return false;
-        } else return false;
-        if (getSymbel.equels("K") && startLine != 0 && startColumn != 0 ) {
-            return check = false;
-        } else return check = true;
-        if (getSymbel.equels("R") && startLine != 0 && startColumn != 0 ) {
-            return check = false;
-        } else return check = true;
+        }
+
+        if (board[startLine][startColumn].getSymbol().equals("R") && startLine != 0 && startColumn != 0) {
+            return false;
+        } else return true;
     }
 
     public void printBoard() {  //print board in console
@@ -59,6 +57,7 @@ public class ChessBoard {
     public boolean checkPos(int pos) {
         return pos >= 0 && pos <= 7;
     }
+
     public boolean castling0() {
         if (nowPlayer.equals("White")) {
             if (board[0][0] == null || board[0][4] == null) return false;
@@ -96,7 +95,8 @@ public class ChessBoard {
             } else return false;
         }
     }
-    public boolean castling7(){
+
+    public boolean castling7() {
         if (nowPlayer.equals("White")) {
             if (board[7][0] == null || board[7][4] == null) return false;
             if (board[7][0].getSymbol().equals("R") && board[7][4].getSymbol().equals("K") && // check that King and Rook
