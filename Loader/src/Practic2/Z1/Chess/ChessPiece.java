@@ -2,7 +2,7 @@ package Practic2.Z1.Chess;
 
 public abstract class ChessPiece {
     String color;
-    boolean check = true;
+     public boolean check = true;
 
     public ChessPiece(String color) {
         this.color = color;

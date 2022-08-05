@@ -20,6 +20,7 @@ public class Bishop extends ChessPiece {
 
     @Override
     public String getSimbl() {
+
         return "B";
     }
 }
