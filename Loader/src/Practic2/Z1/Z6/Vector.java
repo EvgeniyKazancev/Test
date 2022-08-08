@@ -1,7 +1,7 @@
 package Practic2.Z1.Z6;
 
 public abstract class Vector {
-    int x1,y1,z1,x2,y2,z2; //координаты начала и конца вектора;
+    int x1,y1,z1,x2,y2,z2;
 
     public Vector(int x1, int y1, int z1, int x2, int y2, int z2) {
         this.x1 = x1;
