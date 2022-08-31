@@ -16,7 +16,7 @@ public class Solution3 {
                 result = "0";
             }
         }
-        FileWriter writer = new FileWriter("Root/src/output.txt", true);
+        FileWriter writer = new FileWriter("Root/src/output.txt", false);
         writer.write(result);
         writer.close();
 

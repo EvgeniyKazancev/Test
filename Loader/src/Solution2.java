@@ -10,6 +10,7 @@ public class Solution2 {
         Scanner scanner = new Scanner(new FileInputStream("Root/src/data.txt"));
         int compos = 1;
         int oneLineMax = scanner.nextInt();
+
         String[] line = scanner.nextLine().split(" ");
         int[] delLines = new int[line.length];
 
@@ -26,4 +27,6 @@ public class Solution2 {
         }
         return compos;
     }
+
+
 }
