@@ -87,7 +87,7 @@ public class MainCard {
         cardList.add(card38);
 
         Set<Card> cardSet = new HashSet<>(cardList);
-        for (Card card : cardSet);
+      //  for (Card card : cardSet);
         System.out.print(cardSet);
     }
 }
