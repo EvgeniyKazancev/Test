@@ -1,3 +1,5 @@
+package All;
+
 import java.io.File;
 
 public class Catal {

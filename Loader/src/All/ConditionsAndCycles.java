@@ -1,3 +1,5 @@
+package All;
+
 public class ConditionsAndCycles {
     public static void main(String[] args) {
         int value = add(7, 8);

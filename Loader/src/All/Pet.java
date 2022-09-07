@@ -1,3 +1,5 @@
+package All;
+
 import java.util.Objects;
 
 public class Pet implements Comparable<Pet> {

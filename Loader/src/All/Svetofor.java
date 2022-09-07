@@ -1,3 +1,5 @@
+package All;
+
 public class Svetofor {
     public static void main(String[] args) {
         char svetofor = 'r';

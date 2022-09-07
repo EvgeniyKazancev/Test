@@ -1,3 +1,5 @@
+package All;
+
 public class Loader3 {
     private static int source = 30;
     private static int receiver = 0;

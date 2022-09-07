@@ -1,3 +1,5 @@
+package All;
+
 public class Car0 {
     private String brand, name;
     private boolean onSale;

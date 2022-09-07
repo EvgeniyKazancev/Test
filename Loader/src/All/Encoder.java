@@ -1,3 +1,5 @@
+package All;
+
 public class Encoder {
     StringBuilder cipher(String message, int offset) {
 

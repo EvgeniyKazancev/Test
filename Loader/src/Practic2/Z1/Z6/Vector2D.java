@@ -8,6 +8,7 @@ public class Vector2D extends Vector{
     }
     @Override
     double getLength() {
+
         return Math.sqrt(Math.pow(x1 - x2, 2)  + Math.pow(y2 - y2, 2) );
     }
 

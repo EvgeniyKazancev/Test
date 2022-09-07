@@ -1,3 +1,5 @@
+package All;
+
 public class Loader22 {
     public static void main(String[] args) {
         int a = 10;

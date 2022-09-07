@@ -1,3 +1,5 @@
+package All;
+
 import java.io.*;
 import java.util.Scanner;
 

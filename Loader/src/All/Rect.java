@@ -1,3 +1,5 @@
+package All;
+
 public class Rect {
     public static void main(String[] args) {
 

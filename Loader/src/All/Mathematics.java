@@ -1,3 +1,5 @@
+package All;
+
 public class Mathematics {
 
 

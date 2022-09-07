@@ -1,3 +1,5 @@
+package All;
+
 import java.util.Random;
 import java.util.Scanner;
 public class GuessNumber {
