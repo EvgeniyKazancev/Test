@@ -1,16 +1,11 @@
 package All;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
+
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Calendar;
-import java.util.SimpleTimeZone;
-import java.util.WeakHashMap;
+
 
 public class ConsoleClock extends Thread {
-
-
         @Override
     public void run() {
         while (!isInterrupted()) {
