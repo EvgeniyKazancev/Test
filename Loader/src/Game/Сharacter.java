@@ -13,6 +13,10 @@ public abstract class Сharacter implements Fight {
         this.dexterity = dexterity;
     }
 
+    public Сharacter() {
+
+    }
+
     @Override
     public int attack() {
         if (dexterity * 3 > getRandomValue() ) {

@@ -7,4 +7,8 @@ public class Healer extends Merchant {
         return super.sell(goods);
 
     }
+   public void sellPotion(){
+
+
+   }
 }
