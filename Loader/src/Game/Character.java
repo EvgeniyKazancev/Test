@@ -1,10 +1,10 @@
 package Game;
 
-public abstract class Сharacter implements Fight {
+public abstract class Character implements Fight {
     private String name;
     private int hp, gold, power, experience, dexterity;
 
-    public Сharacter(String name, int hp, int gold, int power, int experience, int dexterity) {
+    public Character(String name, int hp, int gold, int power, int experience, int dexterity) {
         this.name = name;
         this.hp = hp;
         this.gold = gold;
@@ -13,24 +13,24 @@ public abstract class Сharacter implements Fight {
         this.dexterity = dexterity;
     }
 
-    public Сharacter() {
+    public Character() {
 
     }
 
     @Override
     public int attack() {
         if (dexterity * 3 > getRandomValue() ) {
-            return power;
-        } else if (getRandomValue() >= 10 ){
-           return power * 2;
-        } else return  0;
+            return getRandomValue() <= 10 ? power * 2 : power;
+
+        } else
+            return  0;
     }
 
     private int getRandomValue() {
         return (int)(Math.random() * 100);
     }
 
-    public String getName(String s) {
+    public String getName() {
         return name;
     }
 
