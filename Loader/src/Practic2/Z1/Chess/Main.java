@@ -1,7 +1,7 @@
 package Practic2.Z1.Chess;
 import java.util.Scanner;
 
-public class Main {
+/**public class Main {
 
     public static ChessBoard buildBoard() {
         ChessBoard board = new ChessBoard("White");
@@ -97,5 +97,5 @@ public class Main {
         }
     }
 }
-
+*/
 

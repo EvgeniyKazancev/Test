@@ -11,10 +11,10 @@ import java.util.List;
 
 
 
-public class Wastes {
+/**public class Wastes {
 
 
-    public static void main(String[] args) {
+  public static void main(String[] args) {
         final Path file1 = Paths.get("src/balance.txt");
         LocalDate date = LocalDate.now();
         final Path fileWrite = Paths.get("balance_total" + date + ".txt");
@@ -43,4 +43,4 @@ public class Wastes {
             e.printStackTrace();
         }
     }
-}
+}*/

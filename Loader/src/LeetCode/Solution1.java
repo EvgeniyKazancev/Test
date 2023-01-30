@@ -1,6 +1,6 @@
 package LeetCode;
 
-public class Solution1 {
+/**public class Solution1 {
     public String longestCommonPrefix(String[] strs) {
         if (strs.length == 0)
             return "";
@@ -15,3 +15,4 @@ public class Solution1 {
             return prefix;
     }
 }
+*/

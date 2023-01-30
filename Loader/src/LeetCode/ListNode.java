@@ -17,21 +17,21 @@ public class ListNode {
     }
 }
 class Solution3 {
-    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+    public ListNode addTwoNumbers(ListNode list1, ListNode list2) {
         ListNode listNode = new ListNode(0);
         ListNode curr = listNode;
         int carry = 0;
-        while (l1 != null || l2 != null || carry != 0 ) {
-           int x = l1 != null ? l1.val : 0;
-           int y = l2 != null ? l2.val : 0;
+        while (list1 != null || list2 != null || carry != 0 ) {
+           int x = list1 != null ? list1.val : 0;
+           int y = list2 != null ? list2.val : 0;
            int sum = x + y + carry;
            carry = sum / 10;
           curr.next = new ListNode(sum % 10);
           curr = curr.next;
-         if (l1 != null)
-             l1 = l1.next;
-         if (l2 != null)
-             l2 = l2.next;
+         if (list1 != null)
+             list1 = list1.next;
+         if (list2 != null)
+             list2 = list2.next;
         }
         return listNode;
     }
