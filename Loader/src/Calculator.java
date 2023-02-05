@@ -1,10 +1,20 @@
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Calculator {
-    private Map<String, Integer> romanNumeralMap;
 
-    public Calculator() {
+public class Calculator {
+    public static void main(String[] args)  {
+
+
+    }
+
+ public static Map<String, Integer> romanNumeralMap;
+
+ public  Calculator() {
         romanNumeralMap = new HashMap<String, Integer>();
         romanNumeralMap.put("I", 1);
         romanNumeralMap.put("II", 2);
@@ -18,7 +28,8 @@ public class Calculator {
         romanNumeralMap.put("X", 10);
     }
 
-    public int calculate(String input) {
+    public static String Calc(String input) {
+
         if (input == null || input.isEmpty()) {
             throw new IllegalArgumentException("Input string is empty or null");
         }
@@ -88,6 +99,8 @@ public class Calculator {
         } else {
             throw new IllegalArgumentException("Input string contains mixed representation of numbers");
         }
-        return res;
+       return  "" + res;
+
     }
+
 }

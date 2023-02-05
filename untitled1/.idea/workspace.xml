@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="03f5867e-e2d7-4bdb-a764-1a946bfb70bf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Loader/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Loader/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Loader/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Loader/lib/postgresql-42.2.18.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Loader/src/BD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Loader/src/LeetCode/Solution7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Loader/src/Main/Java/Sum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Loader/src/Main/Java/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Loader/src/MainBD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Loader/src/PiggyBank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Loader/src/Tinkoff/Floors.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Loader/src/Tinkoff/Roll.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Loader/src/Tinkoff/Tariff.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Loader/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Loader/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Loader/Loader.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Loader/Loader.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Loader/out/production/Loader/Massiv/Check.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Loader/out/production/Loader/Massiv/Main1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Loader/out/production/Loader/Praktika/Balance.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Loader/out/production/Loader/Praktika/Bell.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Loader/out/production/Loader/Praktika/Dog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Loader/out/production/Loader/Praktika/Human.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Loader/out/production/Loader/Praktika/LimitingRectangle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Loader/out/production/Loader/Praktika/Payer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Loader/out/production/Loader/Praktika/Programmer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Loader/out/production/Loader/Praktika/Separator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Loader/out/production/Loader/Tank/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Loader/out/production/Loader/Tank/Tank.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Loader/src/LeetCode/ListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Loader/src/LeetCode/ListNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Loader/src/LeetCode/Solution1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Loader/src/LeetCode/Solution1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Loader/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Loader/src/Praktika/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Loader/src/Practic2/Z1/Chess/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Loader/src/Practic2/Z1/Chess/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Loader/src/Wastes.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Loader/src/Wastes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/out/production/untitled/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/untitled.iml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2JOyhOmRBsWUlqDytZuy8Yv55BF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/IdeaProjects/visualvm_214/bin/visualvm.exe&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="03f5867e-e2d7-4bdb-a764-1a946bfb70bf" name="Changes" comment="" />
+      <created>1671963544086</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1671963544086</updated>
+      <workItem from="1671963547057" duration="84000" />
+      <workItem from="1672314772925" duration="221000" />
+      <workItem from="1674750895404" duration="12000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
