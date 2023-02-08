@@ -1,11 +1,13 @@
-import org.junit.Test;
+/**import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import javax.imageio.IIOException;
 
-class CalculatorTest {
+import java.io.IOException;
 
-
-    public void CalculatorTest(){
-        String Input = ""
-    }
-}
+import static org.junit.jupiter.api.Assertions.assertEquals;
+public class CalculatorTest {
+   @Test
+   public void CalculatorTest1() throws IIOException{
+      Calculator.main(new String[] {"1+2" } );
+   }
+*/

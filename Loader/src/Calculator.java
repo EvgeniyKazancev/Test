@@ -1,20 +1,17 @@
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 
 public class Calculator {
-    public static void main(String[] args)  {
+    public static Map<String, Integer> romanNumeralMap;
 
 
-    }
-
- public static Map<String, Integer> romanNumeralMap;
-
- public  Calculator() {
+    public static void main(String[] args) throws Exception {
         romanNumeralMap = new HashMap<String, Integer>();
         romanNumeralMap.put("I", 1);
         romanNumeralMap.put("II", 2);
@@ -26,9 +23,14 @@ public class Calculator {
         romanNumeralMap.put("VIII", 8);
         romanNumeralMap.put("IX", 9);
         romanNumeralMap.put("X", 10);
+        System.out.println("Enter the expression :");
+        Scanner scanner = new Scanner(System.in);
+        String input = scanner.nextLine();
+
+        System.out.println(calc(input));
     }
 
-    public static String Calc(String input) {
+    public static String calc(String input) throws Exception {
 
         if (input == null || input.isEmpty()) {
             throw new IllegalArgumentException("Input string is empty or null");
@@ -39,68 +41,57 @@ public class Calculator {
         }
 
         int res = 0;
-        if (Character.isDigit(input.charAt(0)) && Character.isDigit(input.charAt(2))) {
+        Pattern pattern = Pattern.compile("^-?[0-9]+$");
+        Matcher matcher1 = pattern.matcher(cheks[0]);
+        Matcher matcher2 = pattern.matcher(cheks[2]);
+        if (matcher1.find() && matcher2.find()) {
             int firstNum = Integer.parseInt(cheks[0]);
             int secondNum = Integer.parseInt(cheks[2]);
+            res = calculate(cheks, firstNum, secondNum);
+            return "" + res;
+        } else if (romanNumeralMap.containsKey(cheks[0].toUpperCase()) &&
+                romanNumeralMap.containsKey(cheks[2].toUpperCase())) {
+            int firstNum = romanNumeralMap.get(cheks[0].toUpperCase());
+            int secondNum = romanNumeralMap.get(cheks[2].toUpperCase());
             if (firstNum < 1 || firstNum > 10 || secondNum < 1 || secondNum > 10) {
-                throw new IllegalArgumentException("Input numbers must be between 1 and 10");
+                throw new IllegalArgumentException();
             }
-            switch (cheks[1]) {
-                case "+":
-                    res = firstNum + secondNum;
-                    break;
-                case "-":
-                    res = firstNum - secondNum;
-                    break;
-                case "*":
-                    res = firstNum * secondNum;
-                    break;
-                case "/":
-                    if (secondNum == 0) {
-                        throw new ArithmeticException("Division by zero not allowed");
+            res = calculate(cheks, firstNum, secondNum);
+            if (res >= 1 && res <= 10) {
+                for (Map.Entry<String, Integer> entry : romanNumeralMap.entrySet()) {
+                    if (entry.getValue() == res) {
+                        return entry.getKey();
                     }
-                    res = firstNum / secondNum;
-                    break;
-                default:
-                    throw new IllegalArgumentException("Unsupported operation symbol");
+                }
             }
-        } else if (romanNumeralMap.containsKey(cheks[0].toLowerCase()) &&
-                romanNumeralMap.containsKey(cheks[2].toLowerCase())) {
-            int firstNum = romanNumeralMap.get(cheks[0].toLowerCase());
-            int secondNum = romanNumeralMap.get(cheks[2].toLowerCase());
-            if (firstNum < 1 || firstNum > 10 || secondNum < 1 || secondNum > 10) {
-                throw new IllegalArgumentException("Input numbers must be between 1 and 10");
-            }
-            switch (cheks[1]) {
-                case "+":
-                    res = firstNum + secondNum;
-                    break;
-                case "-":
-                    if (firstNum - secondNum < 1) {
-                        throw new IllegalArgumentException("Result of the operation can't be represented using Roman numerals");
-                    }
-                    res = firstNum - secondNum;
-                    break;
-                case "*":
-                    res = firstNum * secondNum;
-                    break;
-                case "/":
-                    if (secondNum == 0) {
-                        throw new ArithmeticException("Division by zero not allowed");
-                    }
-                    if (firstNum / secondNum < 1) {
-                        throw new IllegalArgumentException("Result of the operation can't be represented using Roman numerals");
-                    }
-                    res = firstNum / secondNum;
-                    break;
-                default:
-                    throw new IllegalArgumentException("Unsupported operation symbol");
-            }
-        } else {
-            throw new IllegalArgumentException("Input string contains mixed representation of numbers");
-        }
-       return  "" + res;
+            throw new Exception();
+        } else
+            throw new IllegalArgumentException();
 
+    }
+
+    private static int calculate(String[] cheks, int firstNum, int secondNum) {
+        int res;
+        switch (cheks[1]) {
+            case "+":
+                res = firstNum + secondNum;
+                break;
+            case "-":
+                res = firstNum - secondNum;
+                break;
+            case "*":
+                res = firstNum * secondNum;
+                break;
+            case "/":
+                if (secondNum == 0) {
+                    throw new ArithmeticException("Division by zero not allowed");
+                }
+                res = firstNum / secondNum;
+                break;
+            default:
+                throw new IllegalArgumentException();
+        }
+        return res;
     }
 
 }
