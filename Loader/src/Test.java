@@ -1,13 +1,10 @@
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class Test {
     public static void main(String[] args) {
-        String[] test = {"a", "r", "o", "w", "b", "c", "p"};
-        List<String> tester = new ArrayList(List.of(test));
-
-        Collections.sort(tester);
-        System.out.println(tester);
-    }
+        Map<Integer,Integer> prp = new HashMap<>();
+        prp.put(1,2);
+        prp.put(3,4);
+        prp.forEach((k,v) -> prp.put(v,k));
+     }
 }
