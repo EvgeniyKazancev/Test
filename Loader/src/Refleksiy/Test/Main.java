@@ -19,7 +19,7 @@ public class Main {
         List<Class> classes = getAllClasses();
         for (Class clazz : classes) {
             Method[] allMethods = clazz.getDeclaredMethods();
-            Field[] allField = clazz.getClass().getDeclaredFields();
+            Field[] allField = clazz.getDeclaredFields();
             Arrays.asList(allField).forEach(field -> {
                 if (!Modifier.isPrivate(field.getModifiers())) {
                     System.out.println("Field with name " + field.getName() + " should be private");
